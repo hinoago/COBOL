@@ -1,2 +1,2 @@
 # COBOL
-Repository for cobol learning
+My repository for cobol learning
