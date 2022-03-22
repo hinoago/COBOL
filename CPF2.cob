@@ -1,0 +1,22 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CPF.
+      *******************************************
+      *AUTHOR = GABRIEL
+      *OBJECTIVE = FORMAT THE USER ID OUTPUT
+      *DATE = 03/21/2022
+      *******************************************
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       SPECIAL-NAMES.
+          DECIMAL-POINT IS COMMA.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77 WRK-CPF PICTURE Z(11).
+       77 WRK-CPF-ED PICTURE 999.999.999/99.
+       PROCEDURE DIVISION.
+       DISPLAY "INFORME SEU CPF".
+       ACCEPT WRK-CPF.
+       MOVE WRK-CPF TO WRK-CPF-ED.
+       DISPLAY "SEU CPF FORMATADO E".
+       DISPLAY WRK-CPF-ED.
+       STOP RUN.
